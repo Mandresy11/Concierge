@@ -40,8 +40,20 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="hero-background object-cover"
+        className="hero-background hero-background--poster object-cover"
       />
+      <video
+        className="hero-background hero-background--video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/images/gallery-lagoon.jpg"
+        aria-hidden="true"
+      >
+        <source src="/Vidéo.mp4" type="video/mp4" />
+      </video>
       <div className="hero-overlay hero-overlay--vertical" aria-hidden="true" />
       <div className="hero-overlay hero-overlay--horizontal" aria-hidden="true" />
       <div className="hero-vignette" aria-hidden="true" />

@@ -6,10 +6,19 @@ import { useState, type FormEvent } from "react";
 // À remplacer par le vrai numéro WhatsApp du gérant (format international, sans "+" ni espaces).
 const WHATSAPP_NUMBER = "590000000000";
 
-function WhatsAppIcon() {
+function SendIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.5 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1 .2-.2.4-.2.6-.1l1.7.8c.2.1.4.2.5.3.1.2.1.9-.1 1.6z" />
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="m22 2-7 20-4-9-9-4 20-7Z" />
+      <path d="M22 2 11 13" />
     </svg>
   );
 }
@@ -142,7 +151,7 @@ export default function ContactCta() {
             </label>
 
             <button type="submit" className="join-form__submit">
-              <WhatsAppIcon />
+              <SendIcon />
               Envoyer un formulaire
             </button>
           </div>

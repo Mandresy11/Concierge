@@ -114,7 +114,7 @@ export default function JourneySection() {
                 </div>
 
                 <span className="journey-step__number">
-                  Étape {String(index + 1).padStart(2, "0")}
+                  {index + 1}
                 </span>
 
                 {index < steps.length - 1 && (
